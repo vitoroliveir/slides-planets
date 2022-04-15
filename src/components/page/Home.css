@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../img/background-planets.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Home h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(214, 224, 233);
+    padding-top: 5%;
+    font-size: 35px;
+}
+
+.Slides{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap ;
+    padding-top: 25%;
+    overflow: hidden;
+}
+
+
+

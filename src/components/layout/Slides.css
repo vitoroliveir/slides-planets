@@ -1,0 +1,44 @@
+
+.Slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    padding: 15px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 20px;
+    
+}
+
+.Slide img{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    bottom: 150px;    
+}
+
+.Slide p{
+    color: black;
+    position: relative;
+    bottom: 100px;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.Slide:hover{
+    height: 350px;
+    margin: 0;
+    box-shadow: 0 0  3em black;
+    position: relative;
+    width: 300px;
+}
+
+
+/* .none{
+    display: none;
+} */
