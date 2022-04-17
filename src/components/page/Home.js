@@ -13,29 +13,42 @@ function Home() {
   const [end , setEnd] = useState(3)
 
   const next = ()=>{
-    setEnd(end + 3)
-    setFirt(firt + 3)
+    
+    if(end > 6){
+      return null
+    }else{
+      setEnd(end + 3)
+      setFirt(firt + 3)
+    }
+
   }
 
   const previous = ()=>{
-    setEnd(end - 3)
-    setFirt(firt - 3)
+    if(firt  < 1 ){
+      return null
+    }else{
+      setEnd(end - 3)
+      setFirt(firt - 3)
+    }
   }
 
   return (
-    <>
+    <main>
         <div className="Home">
             <h1>SpaceWalk</h1>
-            <button onClick={previous}>anterior</button>
+            
             <div className="Slides" >
-              { lists.map((planet)=>(
-                  <Slides img={planet.imagem} name={planet.name} description={planet.description} id={planet.id} inicio={firt} fim={end}/> 
-                ))}
+              <button onClick={previous} className="btn-previous"></button>
+                { lists.map((planet)=>(
+                    <Slides img={planet.imagem} name={planet.name} description={planet.description} id={planet.id} inicio={firt} fim={end}/> 
+                  ))}
+              <button onClick={next}  className="btn-next"></button>
+
             </div>
-            <button onClick={next}>proximo</button>
+            
        
         </div>
-    </>
+    </main>
   )
 }
 

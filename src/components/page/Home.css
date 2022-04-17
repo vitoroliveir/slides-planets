@@ -15,12 +15,52 @@ body{
     font-size: 35px;
 }
 
+.Home .Slides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .Slides{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap ;
     padding-top: 25%;
     overflow: hidden;
+}
+
+.btn-previous{
+    height: 150px;
+    width: 68px;
+    border: 0;
+    background-color: transparent;
+    background-image: url(../../img/setaquerda.png) ;
+    background-repeat: no-repeat;
+    background-size: 45px;
+
+}
+.btn-next{
+    height: 150px;
+    width: 68px;
+    border: 0;
+    background-color: transparent;
+    background-image: url(../../img/setadireita.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+
+}
+
+
+.btn-previous:hover{
+    transition: 3ms;
+    background-image: url(../../img/setaabertesquerda.png) ;
+    background-size: 40px;
+}
+
+.btn-next:hover{
+    transition: 3ms;
+    background-image: url(../../img/setaabretadireita.png) ;
+    background-size: 40px;
 }
 
 
